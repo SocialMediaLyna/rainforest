@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :products
+  resources :users, only: [:new, :create]
 end
+
   ## resources :products replaces below codes
 # get 'products/index'
 # get 'products/show'
